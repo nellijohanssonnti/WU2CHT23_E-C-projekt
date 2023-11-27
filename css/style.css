@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Libre+Baskerville:ital@1&family=PT+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Libre+Baskerville:ital@1&family=PT+Sans&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#grid_wrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 500px minmax(100px, 1fr);
+    grid-template-areas:
+    "se1 se2 se3"
+    "foo foo foo";
+}
+
+p {
+    padding-top: 10px;
+    color: rgb(0, 0, 0);
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'PT Sans', sans-serif;
+
+    font-size: 15px;
+}
+
+#sec1 {
+    grid-area: se1;
+    padding: 25px;
+    background-color: white;
+
+}
+
+#sec2 {
+    grid-area: se2;
+
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+}
+
+#sec3 {
+    grid-area: se3;
+    padding: 35px;
+    background-color: white;
+}
+
+ol {
+    padding: 20px;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'PT Sans', sans-serif;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#tips {
+    padding: 5px;
+}
+
+header {
+    grid-area: hea;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    height: 120px;
+    border-bottom: solid #9B59B6;
+
+}
+
+footer {
+
+    grid-area: foo;
+    background-color: #9B59B6;
+
+} 
+
+#footitle {
+    color: #ffffff;
+    padding: 20px;
+}
+
+#allt_jag_inte {
+    height: 280px;
+    width: auto;
+}
+
+ul {
+    display: flex;
+    background:#ffffff;
+    justify-content: space-around;
+    align-items: center;
+    width: 98vw;
+    list-style: none;
+
+    font-family: 'Inter', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #9B59B6;
+}

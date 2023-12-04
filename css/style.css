@@ -53,6 +53,12 @@ p {
     background-color: white;
 }
 
+footer {
+    grid-area: foo;
+    background-color: #9B59B6;
+    flex-direction: column; 
+} 
+
 ol {
     padding: 20px;
     font-family: 'Libre Baskerville', serif;
@@ -68,7 +74,8 @@ h1 {
 
 h2 {
     font-family: 'Inter', sans-serif;
-    font-family: 'Libre Baskerville', serif;
+    fon
+    t-family: 'Libre Baskerville', serif;
     font-family: 'PT Sans', sans-serif;
 }
 
@@ -84,18 +91,6 @@ header {
     height: 120px;
     border-bottom: solid #9B59B6;
 
-}
-
-footer {
-
-    grid-area: foo;
-    background-color: #9B59B6;
-
-} 
-
-#footitle {
-    color: #ffffff;
-    padding: 20px;
 }
 
 #allt_jag_inte {
@@ -116,15 +111,40 @@ ul {
     font-family: 'PT Sans', sans-serif;
 }
 
-
-a{
+#ahead{
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-weight: bold;
     font-size: 20px;
 }
 
-a:hover {
+#ahead:hover {
     text-decoration: underline;
     color: #9B59B6;
+}
+
+
+#footp {
+    font-size: 16px;
+    color: white;
+    margin: 20px;
+    flex-direction: column; 
+}
+
+#instaurl {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column; 
+    margin: 0px;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#instaurl:hover {
+    color: black;
 }

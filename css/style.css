@@ -9,10 +9,9 @@
     box-sizing: border-box;
 }
 
-
-#grid_wrapper {
+#grid_wrapper_main {
     display: grid;
-    height: 100vh;
+    min-height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 500px minmax(100px, 1fr);
     grid-template-areas:
@@ -23,59 +22,39 @@
 p {
     padding-top: 10px;
     color: rgb(0, 0, 0);
-    font-family: 'Libre Baskerville', serif;
     font-family: 'PT Sans', sans-serif;
-
     font-size: 15px;
 }
 
 #sec1 {
     grid-area: se1;
     padding: 25px;
-    background-color: white;
-
 }
 
 #sec2 {
     grid-area: se2;
-
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    background-color: white;
 }
 
 #sec3 {
     grid-area: se3;
-    padding: 35px;
-    background-color: white;
+    padding: 25px;
 }
-
-footer {
-    grid-area: foo;
-    background-color: #9B59B6;
-    flex-direction: column; 
-} 
 
 ol {
     padding: 20px;
-    font-family: 'Libre Baskerville', serif;
     font-family: 'PT Sans', sans-serif;
     font-size: 15px;
 }
 
 h1 {
-    font-family: 'Inter', sans-serif;
-    font-family: 'Libre Baskerville', serif;
     font-family: 'PT Sans', sans-serif;
 }
 
 h2 {
-    font-family: 'Inter', sans-serif;
-    fon
-    t-family: 'Libre Baskerville', serif;
     font-family: 'PT Sans', sans-serif;
 }
 
@@ -89,13 +68,26 @@ header {
     display: flex;
     align-items: center;
     height: 120px;
-    border-bottom: solid #9B59B6;
+    border-bottom: solid #9B59B6 3.5px;
+}
 
+#ahead{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+#ahead:hover {
+    text-decoration: underline;
+    color: #9B59B6;
 }
 
 #allt_jag_inte {
     height: 280px;
     width: auto;
+    margin: 0 auto;
 }
 
 ul {
@@ -105,46 +97,109 @@ ul {
     align-items: center;
     width: 98vw;
     list-style: none;
+    font-family: 'PT Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
 
-    font-family: 'Inter', sans-serif;
-    font-family: 'Libre Baskerville', serif;
+#instaurl:hover {
+    color: black;
+}
+
+footer {
+    grid-area: foo;
+    background-color: #9B59B6;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#foot1 {
+    color: white;
     font-family: 'PT Sans', sans-serif;
 }
-
-#ahead{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    font-size: 20px;
-}
-
-#ahead:hover {
-    text-decoration: underline;
-    color: #9B59B6;
-}
-
 
 #footp {
     font-size: 16px;
     color: white;
     margin: 20px;
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
 
 #instaurl {
-    width: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-direction: column; 
-    margin: 0px;
+    display: inline-block;
+    text-align: center;
     color: white;
     background-color: red;
     text-decoration: none;
     font-family: 'PT Sans', sans-serif;
+    margin: 0 auto;
 }
 
-#instaurl:hover {
-    color: black;
+
+
+#grid_wrapper_skrack {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 500px 500px 500px 200px;
+    grid-template-areas:
+    "se1 se2 se3 se4"
+    "se5 se6 se7 se8"
+    "se9 se10 se11 se12"
+    "foo foo foo foo";
+}
+
+
+
+#placeholder_book {
+    height: 280px;
+    width: auto;
+    
+}
+
+.booktemplate {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#placeholder_p {
+    margin: 25px ;
+}
+
+#grid_wrapper_romans {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 500px 500px 500px 200px;
+    grid-template-areas:
+    "se1 se2 se3 se4"
+    "se5 se6 se7 se8"
+    "se9 se10 se11 se12"
+    "foo foo foo foo";
+}
+
+
+
+#placeholder_book {
+    height: 280px;
+    width: auto;
+    
+}
+
+.booktemplate {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#placeholder_p {
+    margin: 25px ;
 }

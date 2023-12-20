@@ -88,6 +88,7 @@ header {
 #allt_jag_inte {
     height: 23vw;
     min-height: 400px;
+    transition-duration: 0.8s;
 }
 
 ul {
@@ -150,11 +151,18 @@ footer {
     background-color: #c488db;
 }
 
-.booktemplate:hover {
-    transform: scale(1.009, 1.009);
+.book:hover {
+        transform: scale(1.1, 1.1);
+        transition-duration: 0.5s;
 }
 
 .book {
     height: 380px;
     width: auto;
+    transition-duration: 1s;
+}
+
+#allt_jag_inte:hover {
+    transform: scale(1.05, 1.05);
+    transition-duration: 0.5s;
 }
